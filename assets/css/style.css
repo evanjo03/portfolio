@@ -1,0 +1,126 @@
+/** http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button, input[type=submit], input[type=reset] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* END RESET.CSS */
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+html body .nav-bar {
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 3rem;
+}
+html body .nav-bar .nav-button {
+  padding: 1rem;
+  margin: 0.5rem;
+  color: #ffffff;
+  background-color: none;
+  transition: 0.5s;
+  transition-property: color;
+}
+html body .nav-bar .nav-button:hover {
+  color: gray;
+  cursor: pointer;
+  transition: 0.5s;
+}
+html body .splash-container {
+  height: 78vh;
+  background-color: black;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  filter: grayscale(100%);
+  display: flex;
+  flex-direction: column;
+}
+html body .info-div {
+  background-color: black;
+  height: 22vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body .info-div .info {
+  margin: 2rem;
+  color: #ffffff;
+  font-size: 4rem;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 1rem;
+  }
+}
+html body .info-div .info-icon {
+  color: #ffffff;
+  animation: MoveUpDown 1s linear infinite;
+  position: absolute;
+}
+html body #footer {
+  background-color: gray;
+  height: 0vh;
+}
+
+/*# sourceMappingURL=style.css.map */
