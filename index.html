@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <title>John Evans</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link href="assets/css/font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-  <script src="assets/app.js"></script>
+    <meta charset="utf-8">
+    <title>John Evans</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="assets/css/font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="assets/app.js"></script>
 </head>
 <body>
-  <div class='splash-container'>
-    <div class='nav-bar'>
-      <a class='nav-button' onclick="onUnfinishedItemClicked()">Resume</a>
-      <a class='nav-button' onclick="onUnfinishedItemClicked()">About Me</a>
-      <a class='nav-button' href="https://www.linkedin.com/in/john-evans-034a8210b/" target="_blank"
-      ><i class="fab fa-linkedin fa-2x"></i></a>
+    <div class='splash-container'>
+        <div class='nav-bar'>
+            <a class='nav-button' href="assets/images/resume.pdf" target="_blank">Resume</a>
+            <a class='nav-button' href="mailto:john.wes.evans@gmail.com">Contact Me</a>
+            <a class='nav-button' href="https://www.linkedin.com/in/john-evans-034a8210b/" target="_blank"
+            ><i class="fab fa-linkedin fa-2x"></i></a>
+            <a class='nav-button' href="https://github.com/evanjo03" target="_blank"
+            ><i class="fab fa-github fa-2x"></i></a>
+        </div>
     </div>
-  </div>
-  <div class='info-div'>
-    <span class='info'>Hi, I'm John. I'm a software engineer.</span>
-    <!-- href="#footer" -->
-    <a onclick="alert('hi Jen :)')">
-      <span class='info-icon'><i class="fas fa-angle-down fa-3x"></i></span>
-    </a>
-  </div>
-  <div id='footer'></div>
+    <div class='info-container'>
+        <span class='info'>Hi, I'm John. I'm a software engineer.</span>
+        <a href="#skills-container">
+            <span class='info-icon'><i class="fas fa-angle-down fa-3x"></i></span>
+        </a>
+    </div>
+    <div id='skills-container'>
+        <div class='header'>Technology</div>
+        <div class='list'>
+            <div class='list-element'><i class="fas fa-chevron-right"></i>Angular</div>
+            <div class='list-element'><i class="fas fa-chevron-right"></i>Typescript</div>
+            <div class='list-element'><i class="fas fa-chevron-right"></i>SCSS</div>
+            <div class='list-element'><i class="fas fa-chevron-right"></i>Javascript (ES6)</div>
+            <div class='list-element'><i class="fas fa-chevron-right"></i>PostgreSQL</div>
+            <div class='list-element'><i class="fas fa-chevron-right"></i>.NET Core</div>
+            <div class='list-element'><i class="fas fa-chevron-right"></i>React</div>
+            <div class='list-element'><i class="fas fa-chevron-right"></i>Node.js</div>
+        </div>
+    </div>
+    <div id='footer'>
+        <span class='footer-content'>&copy; John Evans 2020</span>
+        <a class='footer-content' href="assets/images/resume.pdf" target="_blank">Resume</a>
+        <a class='footer-content' href="mailto:john.wes.evans@gmail.com">Contact Me</a>
+        <a class='footer-content' href="https://www.linkedin.com/in/john-evans-034a8210b/" target="_blank"
+        ><i class="fab fa-linkedin fa-2x"></i></a>
+        <a class='footer-content' href="https://github.com/evanjo03" target="_blank"
+        ><i class="fab fa-github fa-2x"></i></a>
+    </div>
 </body>
 </html>
