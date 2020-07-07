@@ -187,7 +187,7 @@ html body #summary-container .skills-container .skills-list-container .list-elem
 html body #summary-container .skills-container .skills-list-container .list-element > img {
   width: 100%;
 }
-@media (max-width: 1300px) and (min-width: 501px) {
+@media (max-width: 1300px) {
   html body #summary-container .skills-container {
     flex-direction: column;
   }
