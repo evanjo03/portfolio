@@ -93,8 +93,8 @@ html {
             background-image: url("../images/background.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-              background-attachment: fixed;
-                background-position: center center;
+            background-attachment: fixed;
+            background-position: center center;
             display: flex;
             flex-direction: column;
         }
@@ -143,58 +143,95 @@ html {
             }
         }
 
-        #skills-container {
+        #summary-container {
             background-color: #ffffff;
             display: flex;
-            padding: 3rem 0;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            padding-top: 2rem;
 
-            .header {
-                padding: 2%;
-                font-size: 3rem;
+            .summary-header {
+                margin: 2rem;
+                font-size: 4rem;
+                text-align: center;
             }
 
-            .list {
+            .skills-container {
+                margin: 2rem;
+                padding: 1rem;
                 display: flex;
+                width: 78%;
                 flex-direction: row;
-                align-items: center;
                 justify-content: center;
-                font-size: 3rem;
-                width: 80%;
-                flex-wrap: wrap;
 
-                .list-element {
-                    padding: 0 0 0 10%;
-                    font-size: 2rem;
-                    width: 38%;
-                    text-align: left;
-                    margin: auto;
+                .skills-information-container {
+                    width: 50%;
+                    padding: 3rem;
+                    margin: 2rem;
+                    font-size: 3rem;
+                    line-height: 5rem;
 
-                    i {
+                    >a {
+                        color: inherit;
+                        text-decoration: none;
+                        transition: .5s;
+                        transition-property: color;
+
+                        &:hover {
+                            color: gray;
+                            cursor: pointer;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+
+                .skills-list-container {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    padding: 3rem;
+
+                    .list-element {
+                        margin: .5rem;
+                        padding: .5rem;
+                        width: 8rem;
+
+                        >img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 1300px) and (min-width: 501px) {
+                .skills-container {
+                    flex-direction: column;
+
+                    .skills-list-container {
+                        width: 100%;
+                        padding: .25rem;
+
+                        .list-element {
+                            margin: .25rem;
+                            padding: .25rem;
+                        }
+                    }
+
+                    .skills-information-container {
+                        width: 100%;
+                        padding: 1rem;
                         margin: 1rem;
                     }
-                }
 
-                @media (max-width: 960px) and (min-width: 501px) {
-                    .list-element {
-                        width: 40%;
-                        font-size: 1rem;
-                    }
-                }
-
-                @media (max-width: 500px) {
-                    .list-element {
-                        width: 90%;
-                    }
                 }
             }
         }
 
         #footer {
-            background-color: gray;
-            height: 30vh;
+            height: 20vh;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -217,14 +254,14 @@ html {
                 font-size: 2rem;
                 padding: 1rem;
                 margin: 0.5rem;
-                color: #ffffff;
+                color: black;
                 background-color: none;
                 transition: .5s;
                 transition-property: color;
                 text-decoration: none;
 
                 &:hover {
-                    color: black;
+                    color: gray;
                     cursor: pointer;
                     transition: 0.5s;
                 }
@@ -233,8 +270,8 @@ html {
             @media (max-width: 960px) and (min-width: 501px) {
                 .footer-content {
                     text-align: center;
-                    width: 45%;
-                    font-size: 1rem;
+                    width: 33%;
+                    font-size: 2rem;
                     padding: .5rem;
                     margin: 0.25rem;
                 }
@@ -244,9 +281,9 @@ html {
                 .footer-content {
                     text-align: center;
                     width: 95%;
-                    font-size: 1rem;
+                    font-size: 2rem;
                     padding: .25rem;
-                    margin: 0rem;
+                    margin: .25rem;
                 }
             }
         }
