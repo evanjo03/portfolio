@@ -1,4 +1,4 @@
 (() => {
     const splash = document.querySelector('.splash-container');
-    splash.setAttribute('backgroundImage', 'url("../images/backgrodund.jpg")');
+    splash.setAttribute('style', 'background-image: url("assets/images/background.jpg")');
 })()
