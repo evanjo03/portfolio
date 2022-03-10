@@ -4,11 +4,9 @@
   --font-color--hover: #4d0659;
   --nav-animation-duration: 300ms;
 }
-
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: var(--font-family);
   color: var(--font-color--primary);
@@ -16,12 +14,10 @@ body {
   margin: 0;
   height: 100vh;
 }
-
 a {
   text-decoration: none;
   color: var(--font-color--primary);
 }
-
 .nav {
   display: flex;
   flex-direction: row;
@@ -29,22 +25,18 @@ a {
   justify-content: flex-end;
   padding: 0 2rem;
 }
-
 .nav__container {
   padding: 1rem;
 }
-
 .nav__anchor {
   display: block;
   position: relative;
   padding: 0.2em 0;
 }
-
 .nav__anchor:hover {
   color: var(--font-color--hover);
   transition: color var(--nav-animation-duration) all;
 }
-
 .nav__anchor::after {
   content: "";
   position: absolute;
@@ -59,16 +51,13 @@ a {
   transition: opacity var(--nav-animation-duration),
     transform var(--nav-animation-duration);
 }
-
-.nav__anchor:hover::after,
-.nav__anchor:focus::after {
+.nav__anchor:focus::after,
+.nav__anchor:hover::after {
   transform: scale(1);
 }
-
 .main {
   height: 100vh;
 }
-
 .main__content {
   margin: auto;
   max-width: 400px;
@@ -78,70 +67,57 @@ a {
   text-align: center;
   gap: 10vh;
 }
-
 .main__contentHeader__name {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 0.5rem;
 }
-
 .main__contentHeader__description {
   font-size: 1rem;
 }
-
 .main__contentBody {
   display: flex;
   flex-direction: row;
   max-width: 400px;
   flex-wrap: wrap;
 }
-
 .main__contentBody__tool {
   padding: 0.5rem 1rem;
   text-align: center;
   margin: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-
 .main__contentBody__tool:hover {
   cursor: default;
   color: var(--font-color--hover);
   transition: color var(--nav-animation-duration) all;
 }
-
 .footer {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .footer__contact {
   display: flex;
   flex-direction: row;
 }
-
 .footer__anchorContainer {
   padding: 0.25rem 1rem;
 }
-
 .footer__anchor:hover {
   color: var(--font-color--hover);
 }
-
 .footer__copyright {
   margin-bottom: 1rem;
 }
-
 .footer__copyrightText {
   font-size: 0.75em;
 }
-
 @media screen and (max-width: 720px) {
   .nav {
     justify-content: center;
   }
-
   .main__contentHeader__name {
     font-size: 2rem;
     font-weight: 700;
