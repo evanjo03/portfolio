@@ -1,62 +1,93 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="utf-8">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Developer Portfolio of John Evans, based out of the Greater Minneapolis area.">
-      <meta name="keywords" content="John Evans, Minneapolis, St. Paul, Developer, Web Developer, Software Engineer">
-      <meta name="author" content="John Evans">
-    <title>John Evans Developer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="assets/css/font-awesome/css/all.css" rel="stylesheet"> <!--load all styles -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css" />
-</head>
-<body>
-    <div class='splash-container'>
-        <div class='nav-bar'>
-            <a class='nav-button' href="assets/images/resume.pdf" target="_blank">Resume</a>
-            <a class='nav-button' href="mailto:john.wes.evans@gmail.com">Contact Me</a>
-            <a class='nav-button' href="https://www.linkedin.com/in/john-evans-034a8210b/" target="_blank"
-            ><i class="fab fa-linkedin fa-2x"></i></a>
-            <a class='nav-button' href="https://github.com/evanjo03" target="_blank"
-            ><i class="fab fa-github fa-2x"></i></a>
+    <title>John Evans, Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/favicon-lightbulb.svg"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__container">
+        <a class="nav__anchor" href="mailto:john.wes.evans@gmail.com"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <main class="main">
+      <div class="main__content">
+        <div class="main__contentHeader">
+          <div class="main__contentHeader__name">JOHN EVANS</div>
+          <div class="main__contentHeader__description">Software Developer</div>
         </div>
-    </div>
-    <div class='info-container'>
-        <span class='info'>Hi, I'm John. I'm a software engineer.</span>
-        <a href="#summary-container">
-            <span class='info-icon'><i class="fas fa-angle-down fa-3x"></i></span>
-        </a>
-    </div>
-    <div id='summary-container'>
-        <div class='summary-header'>Technology</div>
-        <div class="skills-container">
-            <div class="skills-list-container">
-                <div class='list-element'><img src='assets/images/angular-icon.svg'></div>
-                <div class='list-element'><img src='assets/images/typescript.png'></div>
-                <div class='list-element'><img src='assets/images/scss.png'></div>
-                <div class='list-element'><img src='assets/images/javascript.png'></div>
-                <div class='list-element'><img src='assets/images/postgres.png'></div>
-                <div class='list-element'><img src='assets/images/dotnet.png'></div>
-                <div class='list-element'><img src='assets/images/react.png'></div>
-                <div class='list-element'><img src='assets/images/node.png'></div>
-            </div>
-            <div class="skills-information-container">
-                I'm a passionate developer with experience working with cutting-edge technology on full-stack projects.
-                I'm always eager to take on new challenges.
-                <a href="mailto:john.wes.evans@gmail.com">Let's work together</a>.
-            </div>
+        <div class="main__contentBody">
+          <div class="main__contentBody__tool">Lit</div>
+          <div class="main__contentBody__tool">TypeScript</div>
+          <div class="main__contentBody__tool">JavasSript</div>
+          <div class="main__contentBody__tool">HTML</div>
+          <div class="main__contentBody__tool">CSS</div>
+          <div class="main__contentBody__tool">Lit</div>
+          <div class="main__contentBody__tool">Web Components</div>
+          <div class="main__contentBody__tool">Node.js</div>
+          <div class="main__contentBody__tool">Express</div>
+          <div class="main__contentBody__tool">Storybook</div>
+          <div class="main__contentBody__tool">Karma</div>
+          <div class="main__contentBody__tool">Esbuild</div>
+          <div class="main__contentBody__tool">Webpack</div>
+          <div class="main__contentBody__tool">Sinon</div>
+          <div class="main__contentBody__tool">Angular</div>
+          <div class="main__contentBody__tool">Unit Testing</div>
+          <div class="main__contentBody__tool">Lerna</div>
+          <div class="main__contentBody__tool">CI/CD</div>
+          <div class="main__contentBody__tool">Gitlab</div>
         </div>
-    </div>
-    <div id='footer'>
-        <span class='footer-content'>&copy; John Evans 2020</span>
-        <a class='footer-content' href="assets/images/resume.pdf" target="_blank">Resume</a>
-        <a class='footer-content' href="mailto:john.wes.evans@gmail.com">Contact Me</a>
-        <a class='footer-content' href="https://www.linkedin.com/in/john-evans-034a8210b/" target="_blank"
-        ><i class="fab fa-linkedin fa-2x"></i></a>
-        <a class='footer-content' href="https://github.com/evanjo03" target="_blank"
-        ><i class="fab fa-github fa-2x"></i></a>
-    </div>
-    <script src="assets/app.js"></script>
-</body>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__contact">
+        <div class="footer__anchorContainer">
+          <a class="footer__anchor" href="mailto:john.wes.evans@gmail.com"
+            >Contact</a
+          >
+        </div>
+        <div class="footer__anchorContainer">
+          <a
+            class="footer__anchor"
+            href="https://www.linkedin.com/in/john-wes-evans/"
+            target="_blank"
+            title="My LinkedIn page"
+            >LinkedIn
+          </a>
+        </div>
+        <div class="footer__anchorContainer">
+          <a
+            class="footer__anchor"
+            href="https://github.com/evanjo03"
+            target="_blank"
+            title="My Github page"
+            >Github
+          </a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <span class="footer__copyrightText"
+          >Copyright © 2022 John Evans. All rights reserved.</span
+        >
+      </div>
+    </footer>
+  </body>
 </html>
