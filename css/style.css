@@ -56,7 +56,7 @@ a {
   transform: scale(1);
 }
 .main {
-  height: 100vh;
+  min-height: 100vh;
 }
 .main__content {
   margin: auto;
